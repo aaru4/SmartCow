@@ -1,0 +1,692 @@
+/*Om Namah Shiavya ; Sri Haridas;*/
+.html
+{
+  height: 100%; /* Allows to stretch the image as the header image. */
+}
+
+/*Main Page Body Class*/
+.body
+{
+  font-size: 87.5%;
+  line-height: 1.5;
+  text-align: left;
+  width:760px;
+  height:1020px;
+}
+
+.center
+{
+  padding: 20px;
+}
+
+.highlight
+{
+  background-color:#009dff;
+}
+/* Navigation Bar */
+#navbar
+{
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+
+#navbar a
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  padding-top:0px;
+  text-decoration: none;
+}
+/* Page content */
+.content
+{
+  padding: 16px;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky
+{
+  position:fixed;
+  top: 0;
+  width: 100%;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content
+{
+  padding-top: 15px;
+} 
+
+.mainHeader 
+{
+  opacity: {}; 0;
+  background-image: url('images/SmartCow.png');
+  text-align:center;
+  display:inline-block;
+  margin:0 auto;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.mainHeader:hover 
+{
+  opacity: 1;
+}
+
+/*Further Page's Navigation*/
+.furtherHeader
+{
+  text-align:center;
+  display:inline-block;
+  margin:0 auto;
+  height:100%;
+  width:100%;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.furtherHeader nav
+{
+  background-color: #009dff;
+}
+
+.furtherHeader nav ul
+{
+  list-style: none; /* Removes the bullets */
+}
+
+.furtherHeader nav ul li
+{
+  /* Makes the lists to inline */
+  float: left;
+  display: inline;
+}
+
+.furtherHeader nav a:link, .mainHeader nav a:visited
+{
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  padding: 20px 25px;
+}
+
+.furtherHeader nav a:hover, .furtherHeader nav a:active,
+.furtherHeader nav .active a:link, .furtherHeader nav .active a:visited
+{
+  background-color: #009dff;
+}
+
+a 
+{
+  text-decoration: none; /* Removes the underline of the links */
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 3px 6px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  font-size:inherit;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #009dff;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 22px 46px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.body
+{
+  margin: 0 auto;
+  width: 100%;
+  clear: both;
+}
+
+.mainHeader nav
+{
+  background-color: #009dff;
+}
+
+.mainHeader nav ul
+{
+  list-style: none; /* Removes the bullets */
+}
+ 
+.mainHeader nav ul li
+{
+  /* Makes the lists to inline */
+  float: left;
+  display: inline;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited
+{
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  padding: 20px 25px;
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited 
+{
+  background-color: #009dff;
+}
+
+.typewriter
+{
+  animation-delay: 2s;
+  transition-delay: 2s;
+  -webkit-animation:fade-in 2s;
+  -webkit-animation-delay:3s;
+  -o-animation:fade-in 2s;
+  -o-animation-delay:3s;
+  padding-top:15px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .55em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  text-align:center;
+  letter-spacing: 15tem; /* Adjust as needed */
+  display:inline-block;
+  animation: 
+  typing 2.5s steps(70, end),
+  blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 43%; }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  10% { border-color: #f0f0f0; }
+}
+
+#title
+{
+  animation-delay: 2s;
+  transition-delay: 2s;
+  -webkit-animation:fade-in 2s;
+  -webkit-animation-delay:3s;
+  -o-animation:fade-in 2s;
+  -o-animation-delay:3s;
+  margin:0 auto;
+  font-size:175px;
+  position:relative;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+    text-shadow:
+        0.01em 0 black,
+        0 0.01em black,
+        -0.01em 0 black,
+        0 -0.01em black,
+        -0.01em -0.01em black,
+        -0.01em 0.01em black,
+        0.01em -0.01em black,
+        0.01em 0.01em black;
+}
+
+.subheading
+{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 15px;
+  float: right;
+  text-shadow:
+      0.02em 0 black,
+      0 0.02em black,
+      -0.02em 0 black,
+      0 -0.02em black,
+      -0.02em -0.02em black,
+      -0.02em 0.02em black,
+      0.02em -0.02em black,
+      0.02em 0.02em black;
+}
+
+.hook
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ghg
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.methane
+{
+  font-family: 'Bebas Neue', cursive;
+} 
+
+.bubble
+{
+  float: right;
+  width: 30%;
+  height: auto;
+}
+
+.ghg2
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ghg3
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.congress
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.forty
+{
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+}
+
+.borderT
+{
+  width: 100%;
+  background: #00edb0;
+  height: 15px;
+  padding:0px;
+}
+
+.borderB
+{
+  width: 100%;
+  height: 15px;
+  background: #009dff;
+  padding:0px;
+}
+
+.teal
+{
+  height: 100%;
+}
+
+.onTeal
+{
+  background-color: #00edb0;
+  background-repeat:no-repeat;
+  background-size:cover;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.cowsil
+{
+  max-width:30%;
+  height: 30%;
+  flex-basis: 33%;
+  padding:left 15px;
+}
+
+.co2sil
+{
+  max-width: 30%;
+  height: 30%;
+  flex-basis: 33%;
+}
+
+.ch4sil
+{
+  max-width: 40%;
+  height: 40%;
+  flex-basis: 33%;
+  text-align: center;
+}
+
+.CalcIntro
+{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.calcHook
+{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #00edb0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style: none;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+/* this code was inspired by a w3schools tutorial */
+
+.slidecontainer
+{
+  width: 100%; 
+  text-align:center;
+  font-family: 'Montserrat', cursive;
+  }
+
+.slider
+{
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 99%; 
+  height: 20px;
+  background-color: #8acfff;
+  outline: none; 
+  opacity: 0.7; 
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
+  cursor: url('images/cowicon.png'),pointer; 
+}
+
+.slider:hover
+{
+  opacity: 1; 
+}
+
+.slider::-webkit-slider-thumb
+{
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 25px; 
+  height: 25px;
+  background: #000000;
+  border-radius:50%;
+  cursor: url('images/cowicon.png'),pointer; 
+}
+
+.slider::-moz-range-thumb
+{
+  width: 25px;
+  height: 17px; 
+  background: #000000; 
+  cursor: url('images/cowicon.png'),pointer; 
+}
+
+.solutionHook
+{
+   font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+#image-map
+{
+    position: relative;
+    cursor: url('images/cowicon.png'),pointer; 
+}
+.caption
+{
+  font-family: 'Bebas Neue', cursive;
+ text-align: center;
+  padding-right: 15px;
+}
+
+.about
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.solutionHook2
+{
+   font-family: 'Montserrat', sans-serif;
+  }
+
+.solutionIntro
+{
+    font-family: 'Montserrat', sans-serif; 
+  }
+
+.note
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heading
+{
+  text-align: center;
+}
+
+.blheading
+{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  background-color: #009dff;
+  border: 100px;
+}
+
+.solutionTitle
+{
+  font-family: 'Bebas Neue', cursive;
+}
+
+.icont
+{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.Icon
+{
+  opacity: 0.5;
+  display:flex;
+  height:auto;
+}
+
+.tom
+{
+  width:100%;
+  padding:0px;
+}
+
+.Icon:hover{
+  opacity: 1; 
+}
+
+.AAG:hover {
+  opacity: 1;
+  list-style-type: none;
+}
+
+.Icon:hover + .AAG {
+  opacity: 1;
+}
+
+.AAG
+{
+  transition: opacity 2s;  
+  opacity: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heading
+{
+  font-family: 'Bebas Neue', cursive;
+  opacity: 1;
+}
+
+.seaweedLM
+{
+font-family: 'Montserrat', sans-serif;
+  opacity: 1;
+}
+
+.quote
+{
+  text-decoration-color: #00edb0;
+}
+
+.conclusion
+{
+  font-family:'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.frLink
+{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2vw;
+}
+
+.about
+{
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+.contact 
+{
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+}
+
+.centered
+{
+  align-items: center;
+}
+
+/* Slideshow container - this code is inspired by w3schools */
+.slideshow-container
+{
+  max-width: 3000px;
+  position: relative;
+  margin: auto;
+  background: #ffffff;
+}
+
+
+.mySlides
+{
+  background-image: url('images/cowSS.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next
+{
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover
+{
+  background-color:rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container
+{
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot
+  {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover
+{
+  background-color: #717171;
+}
+
+.fund
+{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.form
+{
+  align-items: center;
+  margin:0 auto;
+}
+
+.links 
+{
+  font-family: 'Montserrat', sans-serif;
+  padding: 12px; 
+  background-color: #009dff;
+  background-size: cover;
+}
