@@ -1,4 +1,5 @@
-/*Om Namah Shiavya ; Sri Haridas;*/
+/*Om Namah Shivaya; Sri Haridas;*/
+
 .html
 {
   height: 100%; /* Allows to stretch the image as the header image. */
@@ -23,6 +24,7 @@
 {
   background-color:#009dff;
 }
+
 /* Navigation Bar */
 #navbar
 {
@@ -47,12 +49,13 @@
 {
   padding: 16px;
 }
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/* The sticky class is added to the navbar with JS when it reaches its scroll position; Influenced by W3Schools */
 .sticky
 {
   position:fixed;
   top: 0;
   width: 100%;
+  padding-bottom:15px;
 }
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content
@@ -62,7 +65,7 @@
 
 .mainHeader 
 {
-  opacity: {}; 0;
+  opacity:{}; 0;
   background-image: url('images/SmartCow.png');
   text-align:center;
   display:inline-block;
@@ -121,10 +124,7 @@
 
 a 
 {
-  text-decoration: none; /* Removes the underline of the links */
-}
-
-/* The dropdown container */
+  /* Dropdown Container */
 .dropdown {
   float: left;
   overflow: hidden;
@@ -139,17 +139,17 @@ a
   color: white;
   padding: 3px 6px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit; 
+  margin: 0; 
   font-size:inherit;
 }
 
-/* Add a red background color to navbar links on hover */
+/* Hover Color on Navbars*/
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #009dff;
 }
 
-/* Dropdown content (hidden by default) */
+/* Dropdown Content */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -159,7 +159,7 @@ a
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* Links Inside the Dropdown */
 .dropdown-content a {
   float: none;
   color: black;
@@ -169,12 +169,12 @@ a
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
+/* Hover Color, Dropdown Links: ; */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
 
-/* Show the dropdown menu on hover */
+/* Shows the Dropdown menu when Hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -217,6 +217,7 @@ a
   background-color: #009dff;
 }
 
+  /* General Typewriter Class */
 .typewriter
 {
   animation-delay: 2s;
@@ -237,17 +238,20 @@ a
   typing 2.5s steps(70, end),
   blink-caret .75s step-end infinite;
 }
-/* The typing effect */
+  
+/* The Typing Effect */
 @keyframes typing {
   from { width: 0; }
   to { width: 43%; }
 }
-/* The typewriter cursor effect */
+  
+/* The Typewriter Cursor Effect */
 @keyframes blink-caret {
   from, to { border-color: transparent; }
   10% { border-color: #f0f0f0; }
 }
 
+/* The Actual Title */
 #title
 {
   animation-delay: 2s;
@@ -272,6 +276,7 @@ a
         0.01em 0.01em black;
 }
 
+/* Formatting */
 .subheading
 {
   color: white;
@@ -333,6 +338,7 @@ a
   text-align: center;
 }
 
+/* The Border Boxes */
 .borderT
 {
   width: 100%;
@@ -404,9 +410,7 @@ a
   flex-direction:row;
   justify-content:space-between;
 }
-
-/* this code was inspired by a w3schools tutorial */
-
+  
 .slidecontainer
 {
   width: 100%; 
@@ -457,6 +461,8 @@ a
    font-family: 'Bebas Neue', cursive;
     text-align: center;
 }
+
+/* Makes the Cow Icon appear on the Image Map as well */
 #image-map
 {
     position: relative;
@@ -593,7 +599,8 @@ font-family: 'Montserrat', sans-serif;
   align-items: center;
 }
 
-/* Slideshow container - this code is inspired by w3schools */
+/* This code was influenced by a W3schools tutorial */
+  
 .slideshow-container
 {
   max-width: 3000px;
@@ -613,7 +620,7 @@ font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
-/* Next & previous buttons */
+/* Next and previous buttons */
 .prev, .next
 {
   cursor: pointer;
@@ -637,14 +644,14 @@ font-family: 'Montserrat', sans-serif;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* Hover Color Change */
 .prev:hover, .next:hover
 {
   background-color:rgba(0,0,0,0.8);
   color: white;
 }
 
-/* The dot/bullet/indicator container */
+/* The Dot Container */
 .dot-container
 {
   text-align: center;
@@ -652,7 +659,7 @@ font-family: 'Montserrat', sans-serif;
   background: #ddd;
 }
 
-/* The dots/bullets/indicators */
+/* The Dots */
 .dot
   {
   cursor: pointer;
@@ -665,7 +672,7 @@ font-family: 'Montserrat', sans-serif;
   transition: background-color 0.6s ease;
 }
 
-/* Add a background color to the active dot/circle */
+/* Active Dot Background Color */
 .active, .dot:hover
 {
   background-color: #717171;
@@ -687,6 +694,4 @@ font-family: 'Montserrat', sans-serif;
 {
   font-family: 'Montserrat', sans-serif;
   padding: 12px; 
-  background-color: #009dff;
-  background-size: cover;
 }
