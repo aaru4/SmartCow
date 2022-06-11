@@ -1,13 +1,9 @@
-// When the user scrolls the page, execute myFunction
+// Making the Navbar Sticky
 window.onscroll = function() {myFunction()};
 
-// Get the navbar
 var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= 500) {
     navbar.classList.add("sticky")
@@ -29,7 +25,6 @@ function changeInputValue(val){
     showValue1(val);
 }
 
-//function take showValue1 {
 function methanCalc() {
     var y = document.getElementById("slider").value;
     var z = 1100;
@@ -37,7 +32,7 @@ function methanCalc() {
     document.getElementById("methaneNumb").innerHTML = myResult;
   }
 
-//
+// Javascript for the Slideshow
 
 var slideIndex = 1;
 showSlides(slideIndex);
